@@ -28,6 +28,11 @@
 			path = CS50;
 			sourceTree = "<group>";
 		};
+		6D90B9FD2D69184200D633AB /* Hello,It's Me */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Hello,It's Me";
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,7 @@
 			children = (
 				6D90B9EC2D6915E700D633AB /* CS50 */,
 				6D90B9EB2D6915E700D633AB /* Products */,
+				6D90B9FD2D69184200D633AB /* Hello,It's Me */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +80,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				6D90B9EC2D6915E700D633AB /* CS50 */,
+				6D90B9FD2D69184200D633AB /* Hello,It's Me */,
 			);
 			name = CS50;
 			packageProductDependencies = (

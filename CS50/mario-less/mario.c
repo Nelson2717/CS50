@@ -10,9 +10,9 @@
 
 int main(void)
 {
-    for (int row = 0; row < 3; row++)
+    for (int i = 0; i < 3; i++)
     {
-        for (int col = 0; col < 3; col++)
+        for (int j = 0; j < 3; j++)
         {
             printf("#");
         }

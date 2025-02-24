@@ -8,9 +8,16 @@
 #include <stdio.h>
 #include "cs50.h"
 
+int get_positive_int(void);
 void meow(int n);
 
 int main(void)
+{
+    int times = get_positive_int();
+    meow(times);
+}
+
+int get_positive_int(void)
 {
     int n;
     do
@@ -18,7 +25,7 @@ int main(void)
         n = get_int("Number: ");
     }
     while (n < 1);
-    meow(n);
+    return n;
 }
 
 void meow(int n)

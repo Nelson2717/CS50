@@ -5,6 +5,7 @@
 //  Created by Nelson Cruz on 2/24/25.
 //
 
+/*
 #include <stdio.h>
 #include "cs50.h"
 
@@ -36,3 +37,4 @@ void meow(int n)
     }
     
 }
+*/

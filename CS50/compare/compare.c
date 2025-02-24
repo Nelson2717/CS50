@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include "cs50.h"
 
+/*
 int main(void)
 {
     int x = get_int("What's x? ");
@@ -26,3 +27,4 @@ int main(void)
         printf("x is equal to y\n");
     }
 }
+*/

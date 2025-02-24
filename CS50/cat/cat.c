@@ -8,10 +8,15 @@
 #include <stdio.h>
 #include "cs50.h"
 
+void meow(void)
+{
+    printf("meow\n");
+}
+
 int main(void)
 {
-    while (true)
+    for (int i = 0; i < 3; i++)
     {
-        printf("meow\n");
+        meow();
     }
 }

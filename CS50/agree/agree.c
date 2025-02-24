@@ -5,6 +5,7 @@
 //  Created by Nelson Cruz on 2/21/25.
 //
 
+/*
 #include <stdio.h>
 #include "cs50.h"
 
@@ -20,3 +21,4 @@ int main(void)
         printf("Not agreed.\n");
     }
 }
+*/

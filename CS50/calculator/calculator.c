@@ -13,5 +13,5 @@ int main(void)
     int x = get_int("x: ");
     int y = get_int("y: ");
     
-    printf("%f\n", (float) x / y);
+    printf("%.70f\n", (float) x / y);
 }

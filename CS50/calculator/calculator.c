@@ -5,6 +5,7 @@
 //  Created by Nelson Cruz on 2/24/25.
 //
 
+/*
 #include <stdio.h>
 #include "cs50.h"
 
@@ -15,3 +16,4 @@ int main(void)
     
     printf("%.70f\n", (float) x / y);
 }
+*/

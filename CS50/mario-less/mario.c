@@ -5,6 +5,7 @@
 //  Created by Nelson Cruz on 2/21/25.
 //
 
+/*
 #include <stdio.h>
 #include "cs50.h"
 
@@ -29,3 +30,4 @@ void print_row(int n)
     }
     printf("\n");
 }
+*/

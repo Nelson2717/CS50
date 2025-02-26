@@ -7,6 +7,7 @@
 
 // Averages three numbers using an array, a constant, and a helper function
 
+/*
 #include "cs50.h"
 #include <stdio.h>
 
@@ -39,3 +40,4 @@ float average(int length, int array[])
     }
     return sum / (float) length;
 }
+*/

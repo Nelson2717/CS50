@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include "cs50.h"
 #include "string.h"
+#include "ctype.h"
 
 int main(void)
 {
@@ -18,7 +19,7 @@ int main(void)
         if (s[i] >= 'a' && s[i] <= 'z')
         {
             // Change s[i] to uppercase.
-            printf("%c", s[i] - 32);
+            printf("%c", toupper(s[i]));
         }
         else
         {

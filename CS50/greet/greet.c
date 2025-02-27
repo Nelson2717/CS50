@@ -10,5 +10,8 @@
 
 int main(int argc, string argv[])
 {
-    printf("hello, %s\n", argv[1]);
+    for (int i = 0; i < argc; i++)
+    {
+        printf("%s\n", argv[i]);
+    }
 }

@@ -1,11 +1,10 @@
 //
-//  iteration.c
+//  recursion.c
 //  CS50
 //
 //  Created by Nelson Cruz on 2/28/25.
 //
 
-/*
 #include <stdio.h>
 #include "cs50.h"
 
@@ -19,13 +18,16 @@ int main(void)
 
 void draw(int n)
 {
+    if (n <= 0)
+    {
+        return;
+    }
+    
+    draw(n - 1);
+    
     for (int i = 0; i < n; i++)
     {
-        for (int j = 0; j < i + 1; j++)
-        {
-            printf("#");
-        }
-        printf("\n");
+        printf("#");
     }
+    printf("\n");
 }
-*/

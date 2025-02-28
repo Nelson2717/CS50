@@ -5,6 +5,7 @@
 //  Created by Nelson Cruz on 2/27/25.
 //
 
+/*
 #include <stdio.h>
 #include "cs50.h"
 #include "string.h"
@@ -25,3 +26,4 @@ int main(void)
     printf("Not found\n");
     return 1;
 }
+*/

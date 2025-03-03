@@ -5,6 +5,7 @@
 //  Created by Nelson Cruz on 2/28/25.
 //
 
+/*
 #include <stdio.h>
 #include "cs50.h"
 
@@ -31,3 +32,4 @@ void draw(int n)
     }
     printf("\n");
 }
+*/

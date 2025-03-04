@@ -5,6 +5,7 @@
 //  Created by Nelson Cruz on 3/4/25.
 //
 
+/*
 #include <stdio.h>
 #include "cs50.h"
 #include "string.h"
@@ -32,3 +33,4 @@ int main(void)
     printf("t: %s\n", t);
     free(t);
 }
+*/

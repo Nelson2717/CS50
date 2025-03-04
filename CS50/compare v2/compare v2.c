@@ -10,10 +10,10 @@
 
 int main(void)
 {
-    int i = get_int("i: ");
-    int j = get_int("j: ");
+    string s = get_int("s: ");
+    string t = get_int("t: ");
     
-    if (i == j)
+    if (s == t)
     {
         printf("Same\n");
     }

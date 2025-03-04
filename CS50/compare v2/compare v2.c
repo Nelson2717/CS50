@@ -9,6 +9,7 @@
 #include "cs50.h"
 #include "string.h"
 
+/*
 int main(void)
 {
     char *s = get_string("s: ");
@@ -17,3 +18,4 @@ int main(void)
     printf("%p\n", s);
     printf("%p\n", t);
 }
+*/

@@ -6,11 +6,20 @@
 //
 
 #include <stdio.h>
+#include "stdlib.h"
 
 int main(void)
 {
-    char *s = NULL;
+    char *s = malloc(100 * sizeof(char));
+    if (s == NULL)
+    {
+        return 1;
+    }
+    
     printf("s: ");
-    scanf("%s", s);
+    scanf("%99s", s);
     printf("s: %s\n", s);
+    
+    free(s);
+    return 0;
 }

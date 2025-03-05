@@ -5,6 +5,7 @@
 //  Created by Nelson Cruz on 3/4/25.
 //
 
+/*
 #include <stdio.h>
 
 int main(void)
@@ -15,3 +16,4 @@ int main(void)
         printf("%i\n", scores[i]);
     }
 }
+*/

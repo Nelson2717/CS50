@@ -5,6 +5,7 @@
 //  Created by Nelson Cruz on 3/5/25.
 //
 
+/*
 #include <stdio.h>
 #include "cs50.h"
 #include "string.h"
@@ -24,3 +25,4 @@ int main(void)
     
     fclose(file);
 }
+*/

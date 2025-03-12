@@ -7,41 +7,26 @@
 
 #include <stdio.h>
 #include "stdlib.h"
+#include "cs50.h"
+
+typedef struct node
+{
+    int number;
+    struct node *next;
+} node;
 
 int main(void)
 {
-    int *list = malloc(3 * sizeof(int));
-    if (list == NULL)
+    node *list = NULL;
+    
+    for (int i = 0; i < 3; i++)
     {
-        return 1;
+        node *n = malloc(sizeof(node));
+        if (n == NULL)
+        {
+            return 1;
+        }
+        (*n).number = get_int("Number: ");
+        (*n).next = NULL;
     }
-    
-    list[0] = 1;
-    list[1] = 2;
-    list[2] = 3;
-    
-    // Time passes
-    
-    int *tmp = realloc(list, 4 * sizeof(int));
-    if (tmp == NULL)
-    {
-        free(list);
-        return 1;
-    }
-    
-    tmp[3] = 4;
-    
-    free(list);
-    
-    list = tmp;
-    
-    for (int i = 0; i < 4; i++)
-    {
-        printf("%i\n", list[i]);
-    }
-    
-    // Time passes
-    
-    free(list);
-    return 0;
 }

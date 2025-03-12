@@ -9,6 +9,8 @@
 #include "stdlib.h"
 #include "cs50.h"
 
+// Implements a sorted linked list of numbers
+
 typedef struct node
 {
     int number;
@@ -17,14 +19,16 @@ typedef struct node
 
 int main(void)
 {
+    //Memory for numbers
     node *list = NULL;
     
+    // Build list
     for (int i = 0; i < 3; i++)
     {
+        // Allocate node for number
         node *n = malloc(sizeof(node));
         if (n == NULL)
         {
-            // TODO: free any memory already malloc'd
             return 1;
         }
         n->number = get_int("Number: ");
@@ -36,37 +40,40 @@ int main(void)
             list = n;
         }
         
-        // If list has numbers already
+        // If number belongs at beginning of list
+        else if (n->number < list->number)
+        {
+            n->next = list;
+            list = n;
+        }
+        
+        // If number belongs later in list
         else
         {
+            // Iterate over nodes in list
             for (node *ptr = list; ptr != NULL; ptr = ptr->next)
             {
                 // If at end of list
                 if (ptr->next == NULL)
                 {
+                    // Append node
+                    ptr->next = n;
+                    break;
+                }
+                
+                // If in middle of list
+                if (n->number < ptr->next->number)
+                {
+                    n->next = ptr->next;
                     ptr->next = n;
                     break;
                 }
             }
         }
     }
-    
-    // Time passes
-    
+    // Print numbers
     for (node *ptr = list; ptr != NULL; ptr = ptr->next)
     {
         printf("%i\n", ptr->number);
     }
-    
-    // Time passes
-    
-    node *ptr = list;
-    while (ptr != NULL)
-    {
-        node *next = ptr->next;
-        free(ptr);
-        ptr = next;
-    }
-    
-    return 0;
 }

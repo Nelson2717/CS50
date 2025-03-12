@@ -27,7 +27,7 @@ int main(void)
             return 1;
         }
         n->number = get_int("Number: ");
-        n->next = NULL;
+        n->next = list;
         
         list = n;
     }

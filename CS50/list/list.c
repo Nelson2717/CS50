@@ -27,9 +27,27 @@ int main(void)
             return 1;
         }
         n->number = get_int("Number: ");
-        n->next = list;
+        n->next = NULL;
         
-        list = n;
+        // If list is empty
+        if (list == NULL)
+        {
+            list = n;
+        }
+        
+        // If list has numbers already
+        else
+        {
+            for (node *ptr = list; ptr != NULL; ptr = ptr->next)
+            {
+                // If at end of list
+                if (ptr->next == NULL)
+                {
+                    ptr->next = n;
+                    break;
+                }
+            }
+        }
     }
     
     // Time passes

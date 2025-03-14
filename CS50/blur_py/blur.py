@@ -1,5 +1,5 @@
 from PIL import Image, ImageFilter
 
-before = Image.open("LA.jpg")
+before = Image.open("lion.jpg")
 after = before.filter(ImageFilter.BoxBlur(100))
-after.save("out.jpg")
+after.save("blur_lion.jpg")

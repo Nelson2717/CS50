@@ -5,6 +5,7 @@
 //  Created by Nelson Cruz on 3/7/25.
 //
 
+/*
 #include <stdio.h>
 #include "stdlib.h"
 #include "cs50.h"
@@ -77,3 +78,4 @@ int main(void)
         printf("%i\n", ptr->number);
     }
 }
+*/

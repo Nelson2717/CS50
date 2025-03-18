@@ -1,5 +1,2 @@
-n = input("Input: ")
-if n.isnumeric():
-    print("Integer.")
-else:
-    print("Not an integer.")
+n = int(input("Input: "))
+print("Integer")

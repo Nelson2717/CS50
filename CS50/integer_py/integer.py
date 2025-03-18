@@ -3,4 +3,4 @@ try:
 except ValueError:
     print("Not an integer.")
 else:
-    print("Not an integer.")
+    print("Integer.")

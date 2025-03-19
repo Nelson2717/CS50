@@ -1,11 +1,10 @@
 import csv
 
-file = open("phonebook.csv", "a")
-
 name = input("Name: ")
 number = input("Number: ")
 
-writer = csv.writer(file)
-writer.writerow([name, number])
+with open("phonebook.csv", "a") as file:
 
-file.close()
+    writer = csv.DictWriter(file, fieldnames=["name", "number"])
+    writer.writerow({"name": name, "number": number})
+

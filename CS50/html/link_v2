@@ -6,12 +6,12 @@
 
             #Harvard
             {
-                color: red;
+                color: #ff0000;
             }
 
             #yale
             {
-                color: blue;
+                color: #0000ff;
             }
         </style>
         <title>link</title>

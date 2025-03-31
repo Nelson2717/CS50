@@ -4,20 +4,19 @@
     <head>
         <style>
 
-            a
+            #Harvard
             {
                 color: red;
-                text-decoration: none;
             }
 
-            a:hover
+            #yale
             {
-                text-decoration: underline;
+                color: blue;
             }
         </style>
         <title>link</title>
     </head>
     <body>
-        Visit <a href="https://www.yale.edu/">Harvard.</a>
+        Visit <a href="https://www.yale.edu/" id="Harvard">Harvard.</a> or <a href="https://www.yale.edu/" id="yale">Yale.</a>
     </body>
 </html>

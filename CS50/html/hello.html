@@ -10,13 +10,10 @@
             <input type="submit">
         </form>
         <script>
-            function greet(event)
-            {
+            document.querySelector('form').addEventListener('submit', function(event){
                 alert('hello, ' + document.querySelector('#name').value);
                 event.preventDefault();
-            }
-            let form = document.querySelector('form');
-            form.addEventListener('submit', greet);
+            });
         </script>
     </body>
 </html>

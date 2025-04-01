@@ -2,7 +2,14 @@
 
 <html lang="en">
     <head>
-        <script src="scripts.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('form').addEventListener('submit', function(event) {
+        alert('hello, ' + document.querySelector('#name').value);
+        event.preventDefault();
+    });
+});
+        </script>
         <title>hello</title>
     </head>
     <body>

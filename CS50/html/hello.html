@@ -2,6 +2,14 @@
 
 <html lang="en">
     <head>
+        <script>
+            docment.addEventListener('DOMContentloaded', function() {
+            document.querySelector('form').addEventListener('submit', function(event){
+                alert('hello, ' + document.querySelector('#name').value);
+                event.preventDefault();
+            });
+        });
+        </script>
         <title>hello</title>
     </head>
     <body>
@@ -9,11 +17,5 @@
             <input autocomplete="off" autofocus id="name" name="name" placeholder="Name" type="text">
             <input type="submit">
         </form>
-        <script>
-            document.querySelector('form').addEventListener('submit', function(event){
-                alert('hello, ' + document.querySelector('#name').value);
-                event.preventDefault();
-            });
-        </script>
     </body>
 </html>

@@ -4,12 +4,12 @@
     <head>
         <style>
 
-            #Harvard
+            .harvard
             {
                 color: #ff0000;
             }
 
-            #yale
+            .yale
             {
                 color: #0000ff;
             }
@@ -17,6 +17,6 @@
         <title>link</title>
     </head>
     <body>
-        Visit <a href="https://www.yale.edu/" id="Harvard">Harvard.</a> or <a href="https://www.yale.edu/" id="yale">Yale.</a>
+        Visit <a href="https://www.yale.edu/" class="Harvard">Harvard.</a> or <a href="https://www.yale.edu/" class="yale">Yale.</a>
     </body>
 </html>

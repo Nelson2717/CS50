@@ -2,10 +2,17 @@
 
 <html lang="en">
     <head>
+        <script>
+            function greet()
+            {
+                let name = document.querySelector('#name').value;
+                alert('hello, world!');
+            }
+        </script>
         <title>hello</title>
     </head>
     <body>
-        <form>
+        <form onsubbmit="greet(); return false;">
             <input autocomplete="off" autofocus id="name" name="name" placeholder="Name" type="text">
             <input type="submit">
         </form>

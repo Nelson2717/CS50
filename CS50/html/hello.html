@@ -12,8 +12,7 @@
         <script>
             function greet(event)
             {
-                let name = document.querySelector('#name').value;
-                alert('hello, ' + name);
+                alert('hello, ' + document.querySelector('#name').value);
                 event.preventDefault();
             }
             let form = document.querySelector('form');

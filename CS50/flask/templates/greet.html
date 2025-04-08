@@ -1,14 +1,7 @@
-<!DOCTYPE html>
+{% extends "layout.html" %}
 
-<html lang="en">
+{% block body %}
+
+    hello, {{ name }}
     
-    <head>
-        <meta name="viewport" content="initial-scale=1, width=device-width">
-        <title>greet</title>
-    </head>
-
-    <body>
-        hello, {{ name }}
-    </body>
-
-</html>
+{% endblock %}

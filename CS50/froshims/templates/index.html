@@ -3,8 +3,8 @@
 {% block body %}
     <h1>Register</h1>
     <form action="/register" method="post">
-        <input autocomplete="off" autofocus name="name" placeholder="Name" type="text">
-        <select name="sport">
+        <input autocomplete="off" autofocus name="name" placeholder="Name" required type="text">
+        <select name="sport" required>
             <option disabled selected value="">Select a sport</option>
             <option value="Basketball">Basketball</option>
             <option value="Soccer">Soccer</option>

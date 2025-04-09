@@ -6,7 +6,7 @@
     {% for book in books %}
         <h2>{{ book.title }}</h2>
         <form action="/cart" method="post">
-            <input name="title" value="{{ book.title }}" type="text">
+            <input name="title" value="{{ book.title }}" type="hidden">
             <button type="submit">Add to Cart</button>
         </form>
     {% endfor %}

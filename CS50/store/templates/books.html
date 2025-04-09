@@ -3,10 +3,12 @@
 {% block body %}
 
     <h1>Books</h1>
-    <ul>
-        {% for book in books %}
-            <li>{{ book.title }}</li>
-        {% endfor %}
-    </ul>
+    {% for book in books %}
+        <h2>{{ book.title }}</h2>
+        <form action="/cart" method="post">
+            <input name="title" value="{{ book.title }}" type="text">
+            <button type="submit">Add to Cart</button>
+        </form>
+    {% endfor %}
 
 {% endblock %}

@@ -1,14 +1,3 @@
-//
-//  scores.c
-//  CS50
-//
-//  Created by Nelson Cruz on 2/26/25.
-//
-
-// Averages three numbers using an array, a constant, and a helper function
-
-/*
-#include "cs50.h"
 #include <stdio.h>
 
 // Constant
@@ -23,7 +12,8 @@ int main(void)
     int scores[N];
     for (int i = 0; i < N; i++)
     {
-        scores[i] = get_int("Score: ");
+        printf("Score: ");
+        scanf("%d", &scores[i]);
     }
 
     // Print average
@@ -40,4 +30,4 @@ float average(int length, int array[])
     }
     return sum / (float) length;
 }
-*/
+

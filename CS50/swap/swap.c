@@ -1,11 +1,3 @@
-//
-//  swap.c
-//  CS50
-//
-//  Created by Nelson Cruz on 3/5/25.
-//
-
-/*
 #include <stdio.h>
 
 void swap(int *a, int *b);
@@ -26,4 +18,4 @@ void swap(int *a, int *b)
     *a = *b;
     *b = tmp;
 }
-*/
+

@@ -1,35 +1,32 @@
-//
-//  phonebook.c
-//  CS50
-//
-//  Created by Nelson Cruz on 2/27/25.
-//
-
-/*
 #include <stdio.h>
-#include "cs50.h"
-#include "string.h"
+#include <string.h>
 
 typedef struct
 {
-    string name;
-    string number;
+    char name[50];
+    char number[20];
 } person;
 
 int main(void)
 {
     person people[3];
-    
-    people[0].name = "David";
-    people[0].number = "+1-617-495-100";
-    
-    people[1].name = "John";
-    people[1].number = "+1-949-468-2750";
-    
-    people[2].name = "Yulia";
-    people[2].number = "+1-617-495-100";
-    
-    string name = get_string("Name: ");
+
+    strcpy(people[0].name, "David");
+    strcpy(people[0].number, "+1-617-495-100");
+
+    strcpy(people[1].name, "John");
+    strcpy(people[1].number, "+1-949-468-2750");
+
+    strcpy(people[2].name, "Yulia");
+    strcpy(people[2].number, "+1-617-495-100");
+
+    char name[50];
+    printf("Name: ");
+    fgets(name, sizeof(name), stdin);
+
+    // Remove newline character if present
+    name[strcspn(name, "\n")] = '\0';
+
     for (int i = 0; i < 3; i++)
     {
         if (strcmp(people[i].name, name) == 0)
@@ -38,7 +35,8 @@ int main(void)
             return 0;
         }
     }
+
     printf("Not found\n");
     return 1;
 }
-*/
+

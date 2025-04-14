@@ -1,20 +1,16 @@
-//
-//  search.c
-//  CS50
-//
-//  Created by Nelson Cruz on 2/27/25.
-//
 
-/*
 #include <stdio.h>
-#include "cs50.h"
-#include "string.h"
+#include <string.h>
 
 int main(void)
 {
-    string strings[] = {"battleship", "boot", "cannon", "iron", "thimble", "top hat"};
-    
-    string s = get_string("String: ");
+    char *strings[] = {"battleship", "boot", "cannon", "iron", "thimble", "top hat"};
+    char s[100];
+
+    printf("String: ");
+    fgets(s, sizeof(s), stdin);
+    s[strcspn(s, "\n")] = '\0'; // Remove trailing newline
+
     for (int i = 0; i < 6; i++)
     {
         if (strcmp(strings[i], s) == 0)
@@ -23,7 +19,8 @@ int main(void)
             return 0;
         }
     }
+
     printf("Not found\n");
     return 1;
 }
-*/
+// This code is a simple string search program that checks if a user-input string

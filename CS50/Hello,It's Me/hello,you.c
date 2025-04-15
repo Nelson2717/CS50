@@ -1,17 +1,12 @@
-//
-//  hello,you.c
-//  CS50
-//
-//  Created by Nelson Cruz on 2/21/25.
-//
-
-/*
- #include <stdio.h>
-#include "cs50.h"
+#include <stdio.h>
+#include <string.h>
 
 int main(void)
 {
-    string name = get_string("What is your name?\n");
+    char name[100];
+    printf("What is your name?\n");
+    fgets(name, sizeof(name), stdin);
+    name[strcspn(name, "\n")] = '\0';
     printf("Hello, %s\n", name);
+    return 0;
 }
-*/

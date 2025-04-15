@@ -1,19 +1,14 @@
-//
-//  compare.c
-//  CS50
-//
-//  Created by Nelson Cruz on 2/21/25.
-//
-
 #include <stdio.h>
-#include "cs50.h"
 
-/*
 int main(void)
 {
-    int x = get_int("What's x? ");
-    int y = get_int("What's y? ");
-    
+    int x, y;
+    printf("What's x? ");
+    scanf("%d", &x);
+
+    printf("What's y? ");
+    scanf("%d", &y);
+
     if (x < y)
     {
         printf("x is less than y\n");
@@ -26,5 +21,7 @@ int main(void)
     {
         printf("x is equal to y\n");
     }
+
+    return 0;
 }
-*/
+// This code prompts the user for two integers and compares them, printing the result of the comparison.

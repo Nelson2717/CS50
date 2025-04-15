@@ -1,11 +1,3 @@
-//
-//  copy v2.c
-//  CS50
-//
-//  Created by Nelson Cruz on 3/5/25.
-//
-
-/*
 #include <stdio.h>
 #include <stdint.h>
 
@@ -26,4 +18,3 @@ int main(int argc, char *argv[])
     fclose(dst);
     fclose(src);
 }
-*/

@@ -1,11 +1,3 @@
-//
-//  garbage.c
-//  CS50
-//
-//  Created by Nelson Cruz on 3/4/25.
-//
-
-/*
 #include <stdio.h>
 
 int main(void)
@@ -16,4 +8,4 @@ int main(void)
         printf("%i\n", scores[i]);
     }
 }
-*/
+// This code declares an array of integers and prints the values in the array.

@@ -1,19 +1,13 @@
-//
-//  length.c
-//  CS50
-//
-//  Created by Nelson Cruz on 2/26/25.
-//
-
-/*
 #include <stdio.h>
-#include "cs50.h"
-#include "string.h"
+#include <string.h>
 
 int main(void)
 {
-    string name = get_string("Name: ");
+    char name[100];
+    printf("Name: ");
+    fgets(name, sizeof(name), stdin);
+    name[strcspn(name, "\n")] = '\0';
     int length = strlen(name);
     printf("%i\n", length);
+    return 0;
 }
-*/

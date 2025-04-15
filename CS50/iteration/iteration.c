@@ -1,20 +1,14 @@
-//
-//  iteration.c
-//  CS50
-//
-//  Created by Nelson Cruz on 2/28/25.
-//
-
-/*
 #include <stdio.h>
-#include "cs50.h"
 
 void draw(int n);
 
 int main(void)
 {
-    int height = get_int("Height: ");
+    int height;
+    printf("Height: ");
+    scanf("%d", &height);
     draw(height);
+    return 0;
 }
 
 void draw(int n)
@@ -28,4 +22,3 @@ void draw(int n)
         printf("\n");
     }
 }
-*/

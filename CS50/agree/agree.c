@@ -1,17 +1,11 @@
-//
-//  agree.c
-//  CS50
-//
-//  Created by Nelson Cruz on 2/21/25.
-//
-
-/*
 #include <stdio.h>
-#include "cs50.h"
 
 int main(void)
 {
-    char c = get_char("Do you agree? ");
+    char c;
+    printf("Do you agree? ");
+    scanf(" %c", &c);
+
     if (c == 'y' || c == 'Y')
     {
         printf("Agreed.\n");
@@ -21,4 +15,3 @@ int main(void)
         printf("Not agreed.\n");
     }
 }
-*/

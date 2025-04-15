@@ -1,19 +1,12 @@
-//
-//  buggy.c
-//  CS50
-//
-//  Created by Nelson Cruz on 2/25/25.
-//
-
-/*
 #include <stdio.h>
-#include "cs50.h"
 
 void print_column(int height);
 
 int main(void)
 {
-    int h = get_int("Height: ");
+    int h;
+    printf("Height: ");
+    scanf("%d", &h);  // Replaces get_int from cs50.h
     print_column(h);
 }
 
@@ -24,4 +17,3 @@ void print_column(int height)
         printf("#\n");
     }
 }
-*/

@@ -58,3 +58,19 @@ def registrants():
     db = get_db()
     registrants = db.execute("SELECT name, sport FROM registrants").fetchall()
     return render_template("registrants.html", registrants=registrants)
+
+# This code defines a Flask web application that allows users to register for sports activities.
+# It uses SQLite as the database to store registrant information.
+# The application has several routes:
+# 1. The root route ("/") displays a registration form with a list of sports.
+# 2. The "/register" route handles the form submission, validates the input,
+#    and inserts the registrant's name and selected sport into the database.
+# 3. The "/registrants" route retrieves and displays all registered participants.
+# The application uses Flask's `g` object to manage the database connection,
+# ensuring that it is created and closed properly.
+# The database schema is created if it doesn't exist, and the application
+# handles errors gracefully by rendering an error template when needed.
+# The application is useful for managing sports registrations and displaying
+# a list of participants.
+# The use of SQLite allows for easy data storage and retrieval,
+# while Flask provides a simple framework for building web applications.

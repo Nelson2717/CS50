@@ -31,3 +31,6 @@ float average(int length, int array[])
     return sum / (float) length;
 }
 
+// This program calculates the average of a set of scores entered by the user.
+// It uses a constant to define the number of scores and a function to calculate the average.
+// The program demonstrates how to use arrays and functions in C to perform calculations.

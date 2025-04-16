@@ -40,3 +40,10 @@ int main(void)
     return 1;
 }
 
+/// This program demonstrates how to use a struct to store information about people, including their names and phone numbers.
+/// It uses an array of structs to store multiple people's information and allows the user to search for a person's phone number by name.
+/// The program uses the fgets function to read a line of input from the user and stores it in a character array.
+/// It also uses the strcmp function to compare strings and the strcspn function to remove the newline character from the input.
+/// The program is a simple example of how to use structs and arrays in C to store and manipulate data.
+/// It also shows how to use the fgets function to read strings safely and how to manipulate strings using functions like strcspn and strcmp.
+/// The program is a simple demonstration of how to use structs and arrays in C to store and manipulate data.

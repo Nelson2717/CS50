@@ -19,3 +19,6 @@ void swap(int *a, int *b)
     *b = tmp;
 }
 
+// This program demonstrates how to swap the values of two integers using pointers.
+// It uses a function to perform the swap and demonstrates how to use pointers to manipulate variables in C.
+// The program is a simple example of how to use pointers and functions in C to perform operations on variables.
